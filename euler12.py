@@ -22,7 +22,7 @@ def d(multiplicities): #the divisor function
     return d
 
 # Most efficient to create prime multiplicities of T(n)
-# First, need a table of primes up to 1000 or so.
+# First, need a table of primes up to 100 or so.
 
 primes = []
 
