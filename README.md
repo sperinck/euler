@@ -1,6 +1,10 @@
 # Project Euler
 
+![Project Euler Badge](https://projecteuler.net/profile/sperinck.png)
 https://projecteuler.net/archives
+
+### Problem 1: Multiples of 3 or 5
+This can be solved in one line of Python code as `print(sum(n for n in range(1000) if n % 3 == 0 or n % 5 == 0))`.
 
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
