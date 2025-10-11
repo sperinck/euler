@@ -13,11 +13,7 @@ $$3\cdot\frac{1}{2}(333)(334)+5\cdot\frac{1}{2}(199)(200)-15\cdot\frac{1}{2}(66)
 ### Problem 2: Even Fibonacci Numbers
 Every third term after 2 is even. By letting $a_1 = a$ and $a_2 = b$, we can create a simpler sequence focusing on just these terms as $a_4 = a + 2b$ and $a_5 = 2a + 3b$. We can iterate by setting `a, b = a + 2b, 2a + 3b` - in this way, the values of $b$ are precisely the even terms.
 
-A cheekier solution uses the fact that, on average, consecutive terms have a ratio of $\phi$, the golden ratio. To jump three terms ahead, we could multiply by $\phi^3= 2 + \sqrt{5}$. We could implement this as 
-
-    n = 2; S = 0
-    while n < 4000000: S += n; n = round(n*(2+sqrt(5)))
-    print(S)
+A lazier solution uses the fact that, on average, consecutive terms have a ratio of $\phi$, the golden ratio. To jump three terms ahead, we could multiply by $\phi^3= 2 + \sqrt{5}$. We could implement this as `n = round(n*(2+sqrt(5)))` while $n$ < 4 million.
 
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
