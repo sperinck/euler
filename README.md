@@ -11,7 +11,7 @@ The one-line iterative summation in `euler1.py` runs in < 0.05s. To solve by han
 $$3\cdot\frac{1}{2}(333)(334)+5\cdot\frac{1}{2}(199)(200)-15\cdot\frac{1}{2}(66)(67) = 233,168$$
 
 ### Problem 2: Even Fibonacci Numbers
-Every third term after 2 is even. By letting $a_1 = a$ and $a_2 = b$, we can create a simpler sequence focusing on just these terms as $a_4 = a + 2b$ and $a_5 = 2a + 3b$. We can iterate by setting `a, b = a + 2b, 2a + 3b` - in this way, the values of $b$ are precisely the even terms.
+Every third term after 2 is even. By letting $a_1 = a$ and $a_2 = b$, we can create a simpler sequence focusing on just these terms by using $a_4 = a + 2b$ and $a_5 = 2a + 3b$. We can iterate by setting `a, b = a + 2b, 2a + 3b` - in this way, the values of $b$ are precisely the even terms.
 
 A lazier solution uses the fact that, on average, consecutive terms have a ratio of $\phi$, the golden ratio. To jump three terms ahead, we could multiply by $\phi^3= 2 + \sqrt{5}$. We could implement this as `n = round(n*(2+sqrt(5)))` while $n$ < 4 million.
 
