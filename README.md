@@ -6,8 +6,7 @@ A place to collect my solutions to Project Euler problems.
 https://projecteuler.net/archives
 
 ### Problem 1: Multiples of 3 or 5
-In one line of Python: `print(sum(n for n in range(1000) if n % 3 == 0 or n % 5 == 0))`  
-This runs in < 0.05s. To solve by hand, we could say that the multiples of $m$ up to $n$ sum to $mT(\lfloor\frac{n}{m}\rfloor)$, where $T(k)$ is the $k$-th triangular number, and subtracting multiples of 15 to avoid double-counting, we find the answer is
+The one-line iterative summation in `euler1.py` runs in < 0.05s. To solve by hand, we could say that the multiples of $k$ up to $999$ sum to $k \times T\Big(\big[\frac{999}{k}\big]\Big)$, where $T(n)$ is the $n$-th triangular number. Removing duplicates, we find the sum to be
 
 $$3\cdot\frac{1}{2}(333)(334)+5\cdot\frac{1}{2}(199)(200)-15\cdot\frac{1}{2}(66)(67) = 233,168$$
 
