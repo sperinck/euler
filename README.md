@@ -1,11 +1,12 @@
 # Project Euler
 
-![Project Euler Badge](https://projecteuler.net/profile/sperinck.png)
-
+![Project Euler Badge](https://projecteuler.net/profile/sperinck.png)  
 https://projecteuler.net/archives
 
 ### Problem 1: Multiples of 3 or 5
-This can be solved in one line of Python code as `print(sum(n for n in range(1000) if n % 3 == 0 or n % 5 == 0))`.
+In one line of Python code: `print(sum(n for n in range(1000) if n % 3 == 0 or n % 5 == 0))`. However, we can avoid the need for code by noting that the multiples of 3 below 1000 sum to $3(1+2+\dots+333)$, and similarly for 5. The multiples of 15 are however counted twice, so they would need to be removed
+
+$$3\cdot\frac{1}{2}(333)(334)+5\cdot\frac{1}{2}(199)(200)-15\cdot\frac{1}{2}(66)(67) = 233,168$$
 
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
