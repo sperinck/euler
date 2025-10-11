@@ -1,12 +1,24 @@
 # Project Euler
 
+A place to collect my solutions to Project Euler problems.
+
 ![Project Euler Badge](https://projecteuler.net/profile/sperinck.png)  
 https://projecteuler.net/archives
 
 ### Problem 1: Multiples of 3 or 5
-In one line of Python code: `print(sum(n for n in range(1000) if n % 3 == 0 or n % 5 == 0))`. However, we can avoid the need for code by noting that the multiples of 3 below 1000 sum to $3(1+2+\dots+333)$, and similarly for 5. The multiples of 15 are however counted twice, so they would need to be removed
+In one line of Python: `print(sum(n for n in range(1000) if n % 3 == 0 or n % 5 == 0))`  
+This runs in < 0.05s. To solve by hand, we could say that the multiples of $m$ up to $n$ sum to $mT(\lfloor\frac{n}{m}\rfloor)$, where $T(k)$ is the $k$-th triangular number, and subtracting multiples of 15 to avoid double-counting, we find the answer is
 
 $$3\cdot\frac{1}{2}(333)(334)+5\cdot\frac{1}{2}(199)(200)-15\cdot\frac{1}{2}(66)(67) = 233,168$$
+
+### Problem 2: Even Fibonacci Numbers
+Every third term after 2 is even. By letting $a_1 = a$ and $a_2 = b$, we can create a simpler sequence focusing on just these terms as $a_4 = a + 2b$ and $a_5 = 2a + 3b$. We can iterate by setting `a, b = a + 2b, 2a + 3b` - in this way, the values of $b$ are precisely the even terms.
+
+A cheekier solution uses the fact that, on average, consecutive terms have a ratio of $\phi$, the golden ratio. To jump three terms ahead, we could multiply by $\phi^3= 2 + \sqrt{5}$. We could implement this as 
+
+    n = 2; S = 0
+    while n < 4000000: S += n; n = round(n*(2+sqrt(5)))
+    print(S)
 
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
