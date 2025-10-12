@@ -25,13 +25,13 @@ A bit of wishful thinking goes a long way. We can avoid a lot of iteration by on
 This can be done by hand with a pocket calculator. First, the primes: $2\times 3 \times 5 \times 7 \times 11 \times 13 \times 17 \times 19$. Under $20$, the highest powers of $2$ and $3$ are $2^4$ and $3^2$ respectively. Including these in the product gives the answer.
 
 ### Problem 6: Sum Square Difference
-A-level mathematicians live for this sort of question. The required value is:
+A-level mathematicians live for this sort of question. The required value, when $n=100$, is:
 
 $$
 \\begin{align*}
-\bigg( \sum_{k=1}^{n} k \bigg)^2 - \sum_{k=1}^{n} k^2 &= \frac{1}{4}k^2(k+1)^2 - \frac{1}{6}k(k+1)(2k+1) \\\\
-&= \frac{1}{12}k(k+1)[3k(k+1)-2(2k+1)] \\\\
-&= \frac{1}{12}k(k+1)(3k^2-k-2)
+\bigg( \sum_{k=1}^{n} k \bigg)^2 - \sum_{k=1}^{n} k^2 &= \frac{1}{4}n^2(n+1)^2 - \frac{1}{6}n(n+1)(2n+1) \\\\
+&= \frac{1}{12}n(n+1)[3n(n+1)-2(2n+1)] \\\\
+&= \frac{1}{12}n(n+1)(3n^2-n-2)
 \\end{align*}
 $$
 
