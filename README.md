@@ -24,6 +24,20 @@ A bit of wishful thinking goes a long way. We can avoid a lot of iteration by on
 ### Problem 5: Smallest Multiple
 This can be done by hand with a pocket calculator. First, the primes: $2\times 3 \times 5 \times 7 \times 11 \times 13 \times 17 \times 19$. Under $20$, the highest powers of $2$ and $3$ are $2^4$ and $3^2$ respectively. Including these in the product gives the answer.
 
+### Problem 6: Sum Square Difference
+A-level mathematicians live for this sort of question. The required value is:
+
+$$
+\\begin{align*}
+\bigg( \sum_{k=1}^{n} k \bigg)^2 - \sum_{k=1}^{n} k^2 &= \frac{1}{4}k^2(k+1)^2 - \frac{1}{6}k(k+1)(2k+1) \\\\
+&= \frac{1}{12}k(k+1)[3k(k+1)-2(2k+1)] \\\\
+&= \frac{1}{12}k(k+1)(3k^2-k-2)
+\\end{align*}
+$$
+
+We can verify this with the value given in the problem when $n=10$.
+
+
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
 
