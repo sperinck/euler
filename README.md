@@ -21,6 +21,9 @@ My original solution was to compile a list of primes to test against $-$ workabl
 ### Problem 4: Largest Palindrome Product
 A bit of wishful thinking goes a long way. We can avoid a lot of iteration by only checking products $m\times n$ where $m$ and $n$ are larger than $900$. That gives $5000$ cases to check, if we ignore duplicates. I can't prove that the largest palindrome will occur in this region but the answer works in any case.
 
+### Problem 5: Smallest Multiple
+This can be done by hand with a pocket calculator. First, the primes: $2\times 3 \times 5 \times 7 \times 11 \times 13 \times 17 \times 19$. Under $20$, the highest powers of $2$ and $3$ are $2^4$ and $3^2$ respectively. Including these in the product gives the answer.
+
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
 
