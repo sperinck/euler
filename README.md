@@ -19,7 +19,7 @@ $(b)$ A lazier solution uses the fact that, on average, consecutive terms have a
 My original solution was to compile a list of primes to test against $-$ workable but very inefficient. Far better to completely divide out the big evil number $n$ by each natural number $2,3,4,5...$, making the number smaller at each step until we have $n=1$, as in the overview to problem 3. This is a thousand times faster than compiling primes. Even this can be improved by only considering odd numbers after 2.
 
 ### Problem 4: Largest Palindrome Product
-A bit of wishful thinking goes a long way. We can avoid a lot of iteration by only checking products $m\times n$ where $m$ and $n$ are larger than $900$. That gives $5000$ cases to check, if we ignore duplicates. I can't prove (yet) that the largest palindrome will occur in this region but I suspect it is true.
+A bit of wishful thinking goes a long way. We can avoid a lot of iteration by only checking products $m\times n$ where $m$ and $n$ are larger than $900$. That gives $5000$ cases to check, if we ignore duplicates. I can't prove that the largest palindrome will occur in this region but the answer works in any case.
 
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
