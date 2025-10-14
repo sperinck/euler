@@ -40,9 +40,9 @@ We can verify this with the value given in the problem when $n=10$.
 ### Problem 7: 10 001st Prime
 Using the famous [prime number theorem](https://en.wikipedia.org/wiki/Prime_number_theorem), where $\pi(x)$ is the prime-counting function, we see that $\pi(10^4) \approx 1086$ and $\pi(10^5) \approx 8086$, so we might expect the 10 001st prime to be a little higher than 100 000.
 
-The code in the solution works by using the Sieve of Eratosthenes. It takes the first prime 2 as given, and generates an array of the odd numbers from 3 to 105 000. Then it removes all multiples of 3 (including 3), all multiples of 5 (including 5), and so on, so that the first number in the array is always the next prime to be considered, adding one to `prime_count` at each stage until the 10 001st prime is found.
+The code in the solution works by using the Sieve of Eratosthenes. It takes the first prime 2 as given, and generates an array of the odd numbers from 3 to 110 000. Then it removes all multiples of 3 (including 3), all multiples of 5 (including 5), and so on, so that the first number in the array is always the next prime to be considered, adding one to `prime_count` at each stage until the 10 001st prime is found.
 
-Note: 105 000 was not the first number I tried! But there are enough clues from the PNT to guess it might be something in this region.
+Note: 110 000 was not the first number I tried! But there are enough clues from the PNT to guess it might be something in this region.
 
 
 ### Problem 11: Largest product in a grid
