@@ -63,7 +63,7 @@ u(u+v) &= 500
 \\end{align*}
 $$
 
-As $0<v<u$ it follows that $u<u+v<2u$, so we are looking for a pair of factors whose ratio is less than 2, which limits the search for factors considerably. There is only one pair of factors that satisfies this, namely 20 and 25. These give $x = 200$, $y = 375$, and $z = 425$. Their product can be worked out by hand by using the difference of two squares:
+As $0<v<u$ it follows that $u<u+v<2u$, so we are looking for a pair of factors whose ratio is less than 2, which limits the search considerably. There is only one pair of factors that satisfies this, namely 20 and 25. These give $x = 200$, $y = 375$, and $z = 425$. Their product can be worked out by hand by using the difference of two squares:
 
 $$
 200\times (400-25) (400+25) = 200 \times (160,000 -625) = 32,000,000 - 125,000 = 31,875,000
