@@ -37,6 +37,11 @@ $$
 
 We can verify this with the value given in the problem when $n=10$.
 
+### Problem 7: 10 001st Prime
+Using the famous prime number theorem, $\pi(x) \sim \frac{x}{\log x}$, where $\pi(x)$ is the prime-counting function, we see that $\pi(10^4) \approx 1086$ and $\pi(10^5) \approx 8086$, so we might expect the 10 001st prime to be a little higher than 100 000.
+
+The code in `euler07.py` works by using the Sieve of Eratosthenes. It takes the first prime $2$ as given and generates an array of the odd numbers from $3$ to $105 000$. Then it simply checks 
+
 
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
