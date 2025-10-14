@@ -19,7 +19,7 @@ $(b)$ A lazier solution uses the fact that, on average, consecutive terms have a
 My original solution was to compile a list of primes to test against $-$ workable but very inefficient. Far better to completely divide out the big evil number $n$ by each natural number $2,3,4,5...$, making the number smaller at each step until we have $n=1$, as in the overview to problem 3. This is a thousand times faster than compiling primes. Even this can be improved by only considering odd numbers after 2.
 
 ### Problem 4: Largest Palindrome Product
-A bit of wishful thinking goes a long way. We can avoid a lot of iteration by only checking products $m\times n$ where $m$ and $n$ are larger than $900$. That gives $5000$ cases to check, if we ignore duplicates. I can't prove that the largest palindrome will occur in this region but the answer works in any case.
+A bit of wishful thinking goes a long way. We can avoid a lot of iteration by only checking products $m\times n$ where $m$ and $n$ are larger than $900$. That gives $5000$ cases to check, if we ignore duplicates. I can't prove that the largest palindrome will occur in this region, or how this might be generalised, but the answer works in any case.
 
 ### Problem 5: Smallest Multiple
 This can be done by hand, though a pocket calculator helps with the last step. First, the primes: $2\times 3 \times 5 \times 7 \times 11 \times 13 \times 17 \times 19$. Under $20$, the highest powers of $2$ and $3$ are $2^4$ and $3^2$ respectively. Including these in the product gives the answer.
