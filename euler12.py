@@ -50,7 +50,7 @@ print("T("+str(n)+") = "+str(int(T(n)))+" has",d(multiplicities),"divisors.")
 print(primes)
 print(multiplicities)
 
-#Amazingly, this still runs in a fraction of a second. Admittedly,
-#we're only checking primes up to 61, but experience shows this is
-#all that's necessary as small highly divisible numbers will have
-#more primes towards the lower end. So staying below 61 is efficient.
+# Amazingly, this still runs in a fraction of a second.
+# we're only checking primes up to 61, but experience shows this is
+# all that's necessary as small highly divisible numbers will have
+# more primes towards the lower end.
