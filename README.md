@@ -70,7 +70,7 @@ $$
 $$
 
 ### Problem 10: Summation of Primes
-Though it summed all the primes up to two million in under a minute, my own primality checker was not as efficient as the one used in the 'official' solution to 7, which is what `euler10.py` is based on. That algorithm takes seconds to run, though anything over a few million might stretch the algorithm to its limits.
+Though it summed all the primes up to two million in under a minute, my first primality checker was not as efficient as the one used in the 'official' solution to 7, which is what `euler10.py` is based on. That algorithm takes seconds to run, though anything over a few million might stretch the algorithm to its limits.
 
 ### Problem 11: Largest product in a grid
 After the splitting the data up into a 20x20 matrix, the solution just runs a loop on each category of horizontal, vertical, and diagonal products, and keeps track of the largest product at any point. Runs in < 0.05s.
