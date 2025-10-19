@@ -32,8 +32,6 @@ for n in range(1,62):
 
 #print(primes)
 
-divisors = []
-
 for n in range(1,14000):
     N = int(T(n))
     multiplicities = []
