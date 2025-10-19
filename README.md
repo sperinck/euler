@@ -83,7 +83,7 @@ Of course, this is only useful if we can work out the prime decomposition of $T(
 
 The code implements this by generating the first few primes up to 100. The early triangular numbers have small prime divisors so this turns out to be enough. Amazingly, even while working out all prime multiplicities of $T(n)$, this algorithm still runs in a fraction of a second. Only small primes are being checked, but this is acceptable as the smallest highly divisible numbers will necessarily have smaller prime factors to get the biggest bang for every divisor buck. Runs in 0.1s.
 
-### Problem 13: Large sum
+### Problem 13: Large Sum
 Code is fairly straightforward; split the data, convert strings to integers, and sum the result. Runs in < 0.05s.
 
 ### Problem 14: Longest Collatz Sequence
