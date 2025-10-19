@@ -88,3 +88,6 @@ Code is fairly straightforward; split the data, convert strings to integers, and
 
 ### Problem 14: Longest Collatz Sequence
 After defining a Collatz function, this program iterates through all sequences beginning with one to one million. It's a bit brute-force, and can probably be optimised, but it runs in about 40 seconds so it passes the one-minute rule.
+
+### Problem 15: Lattice Paths
+No need for a program. If $R$ is right, and $D$ is down, each path may be construed as an arrangement of twenty $R$'s and twenty $D$'s. There are $^{40}C_{20}$ distinct arrangements, and this gives the number of routes.
