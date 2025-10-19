@@ -85,3 +85,6 @@ The code implements this by generating the first few primes up to 100. The early
 
 ### Problem 13: Large sum
 Code is fairly straightforward; split the data, convert strings to integers, and sum the result. Runs in < 0.05s.
+
+### Problem 14: Longest Collatz Sequence
+After defining a Collatz function, this program iterates through all sequences beginning with one to one million. It's a bit brute-force, and can probably be optimised, but it runs in about 40 seconds so it passes the one-minute rule.
